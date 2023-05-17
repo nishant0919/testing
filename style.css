@@ -231,7 +231,7 @@
     margin: 5px 3px;
 }
 
-@media only screen and (max-width:1422px) {
+@media only screen and (max-width:800px) {
     .leftNav {
         flex-direction: column;
     }
