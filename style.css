@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 30%;
+    border: solid 2px white;
+    border-radius: 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.leftNav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.leftNav li {
+    list-style: none;
+    padding: 26px 30px;
+
+}
+
+.leftNav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.rightNav {
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 25px;
+    background: transparent;
+}
+
+#search:hover {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 25px;
+    background: rgb(109, 109, 145);
+    transition: ease-in-out 0.2s;
+}
+
+.background {
+    background: url('https://mcdn.wallpapersafari.com/medium/77/89/ms3kKF.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection {
+    height: 100vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstHalf {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.bFont {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: rgb(4, 201, 30);
+}
+
+.sFont {
+    font-size: 20px;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.secondHalf {
+    width: 30%;
+}
+
+
+.secondHalf img {
+    width: 70%;
+    border: 2px solid white;
+    border-radius: 120px;
+}
+
+.btn {
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    margin: 2px;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius: 20px;
+    background: none;
+}
+
+.btn:hover {
+    padding: 20px;
+    margin: 2px;
+    border: 2px solid rgb(1, 182, 70);
+    cursor: pointer;
+    background-color: rgb(236, 33, 128);
+    transition: ease-in-out 0.3s;
+    color: rgb(0, 0, 0);
+}
+
+.btn-submit {}
+
+
+.thumbnail img {
+    width: 350px;
+    border: 2px solid white;
+    border-radius: 35px;
+
+}
+
+.para {
+    padding: 0 65px;
+
+}
+
+.section {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sectionSubTag {
+    font-size: 20px;
+}
+
+
+.section-left {
+    flex-direction: row-reverse;
+}
+
+.sectionSubtag {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact {
+    background-color: #464646;
+    height: 100vh;
+}
+
+.text-center {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+
+}
+
+.form {
+    max-width: 62%;
+    margin: 42px auto;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-footer {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 30px 0;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 3%;
+    top: 8%;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width:1422px) {
+    .leftNav {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        transition: all 0.s ease-out;
+        height: 447px;
+
+    }
+
+    .rightNav {
+        text-align: center;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav {
+        height: 60px;
+
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+}
